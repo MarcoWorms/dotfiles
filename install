@@ -8,8 +8,12 @@ set -e
 # OSX defaults
 # --------------–-------–--------–--------–-------–--–-----
 
+OSX=$(test "`uname`" == "Darwin" && echo "x")
+
 # Install osx defaults
-./osx/defaults
+if [[ OSX ]]; then
+  ./osx/defaults
+fi
 
 # --------------–-------–--------–--------–-------–--–-----
 # Vim Configuration
