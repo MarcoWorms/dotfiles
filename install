@@ -71,3 +71,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # Create .vimrc
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+
+# --------------–-------–--------–--------–-------–--–-----
+# Tmux
+# --------------–-------–--------–--------–-------–--–-----
+
+ln -s ~/.dotfiles/tmux/config ~/.tmux.conf
+ln -s ~/.dotfiles/tmux/local ~/.tmux.conf.local
