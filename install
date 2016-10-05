@@ -11,7 +11,7 @@ set -e
 # Install Homebrew for package management, if not installed
 if test ! $(which brew)
 then
-  echo " ===> Installing Homebrew for package management..."
+  echo "→ Installing Homebrew for package management..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
@@ -32,6 +32,31 @@ OSX=$(test "`uname`" == "Darwin" && echo "x")
 if [[ OSX ]]; then
   ./osx/defaults
 fi
+
+# --------------–-------–--------–--------–-------–--–-----
+# Fish
+# --------------–-------–--------–--------–-------–--–-----
+
+# Install oh-my-fish
+echo "→ Installing oh-my-fish..."
+curl -L http://get.oh-my.fish | fish
+
+# Install Fisherman, a plugin manager for Fish
+echo "→ Installing Fisherman, a plugin manager for Fish..."
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
+
+# Set Fish as default shell
+echo "→ Linking Fish dotfiles..."
+sudo echo /usr/local/bin/fish >> /etc/shells
+chsh -s /usr/local/bin/fish
+
+# Link Fish dotfiles
+ln -s ~/dotfiles/fish/config.fish ~/.config/fish/conf.d/config.fish
+ln -s ~/dotfiles/fish/utils ~/.config/fish/custom
+ln -s ~/dotfiles/fish/fishfile ~/.config/fish/fishfile
+
+# Run fisher
+fisher
 
 # --------------–-------–--------–--------–-------–--–-----
 # Vim Configuration
