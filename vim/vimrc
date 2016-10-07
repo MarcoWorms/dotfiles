@@ -108,15 +108,17 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'MarcWeber/vim-addon-mw-utils' | Plug 'tomtom/tlib_vim' | Plug 'garbas/vim-snipmate'
 
 " Programming Languages Plugins
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'grvcoelho/vim-javascript-snippets'
 
 " Colors and Appearance Plugins
 Plug 'dracula/vim'
