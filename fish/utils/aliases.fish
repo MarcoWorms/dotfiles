@@ -2,12 +2,12 @@
 # Tmux
 # --------------–-------–--------–--------–-------–--–-----
 
-alias ta='tmux attach -t'
-alias tad='tmux attach -d -t'
-alias ts='tmux new-session -s'
-alias tl='tmux list-sessions'
-alias tksv='tmux kill-server'
-alias tkss='tmux kill-session -t'
+abbr ta='tmux attach -t'
+abbr tad='tmux attach -d -t'
+abbr ts='tmux new-session -s'
+abbr tl='tmux list-sessions'
+abbr tksv='tmux kill-server'
+abbr tkss='tmux kill-session -t'
 
 # --------------–-------–--------–--------–-------–--–-----
 # OSX
