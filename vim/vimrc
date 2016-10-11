@@ -94,6 +94,9 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 " Always diff using vertical mode
 set diffopt+=vertical
 
+" Use cmd+y to yank to clipboard
+set clipboard=unnamedplus
+
 " ----------------------------------------------------------------------
 " | Plugins                                                            |
 " ----------------------------------------------------------------------
