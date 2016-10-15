@@ -1,6 +1,9 @@
 " ----------------------------------------------------------------------
 " | General Settings                                                   |
 " ----------------------------------------------------------------------
+if $SHELL =~ 'fish'
+  set shell=/bin/sh
+endif
 
 " Don't make vim vi-compatibile
 set nocompatible
