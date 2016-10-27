@@ -41,10 +41,6 @@ fi
 echo "→ Installing oh-my-fish..."
 curl -L http://get.oh-my.fish | fish
 
-# Install Fisherman, a plugin manager for Fish
-echo "→ Installing Fisherman, a plugin manager for Fish..."
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
-
 # Set Fish as default shell
 echo "→ Linking Fish dotfiles..."
 sudo echo /usr/local/bin/fish >> /etc/shells
