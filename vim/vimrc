@@ -1,4 +1,4 @@
-"---------------------------------------------------------------------
+" ----------------------------------------------------------------------
 " | General Settings                                                   |
 " ----------------------------------------------------------------------
 if $SHELL =~ 'fish'
@@ -201,15 +201,14 @@ endif
 " Set map leader
 let mapleader = "\<Space>"
 
-" Navigate through tabs
-nnoremap <leader>t :tabnew<cr>
-nnoremap <leader>c :tabclose<cr>
-nnoremap <leader>n :tabnext<cr>
-nnoremap <leader>p :tabprevious<cr>
-
 " Go to start of line with H and to the end with L
 noremap H ^
 noremap L $
+
+" Yank and paste to system's clipboard
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
 
 " Navigate through windows
 nnoremap <C-h> <C-w>h
