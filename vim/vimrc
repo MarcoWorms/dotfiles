@@ -117,6 +117,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'MarcWeber/vim-addon-mw-utils' | Plug 'tomtom/tlib_vim' | Plug 'garbas/vim-snipmate'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Programming Languages Plugins
 Plug 'mxw/vim-jsx'
@@ -260,6 +261,12 @@ nnoremap <leader>gm :Gmove
 nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>grm :Gremove<cr>
 nnoremap <leader>gp :Git push
+
+" ----------------------------------------------------------------------
+" | Plugin - Deoplete.nvim
+" ----------------------------------------------------------------------
+
+let g:deoplete#enable_at_startup = 1
 
 " ----------------------------------------------------------------------
 " | Plugin - Vim JSX                                                   |
